@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="905" y="16.031" width="16" height="16" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#d4d4d4"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="pinterest" class="cls-1" d="M912.991,16.037a8,8,0,1,1-8,8A8,8,0,0,1,912.991,16.037ZM909.928,31.73a8.9,8.9,0,0,1,.018-2.111c0.161-.787,1.091-4.579,1.091-4.579a2.73,2.73,0,0,1-.268-1.628,1.772,1.772,0,0,1,1.52-1.7c0.734,0,1.4.8,0.948,2.2a6.469,6.469,0,0,0-.572,2.54,1.2,1.2,0,0,0,1.324.93c0.8-.018,2.415-0.895,2.45-4.168a2.986,2.986,0,0,0-3.273-3.184,3.955,3.955,0,0,0-3.685,2.4c-0.895,2.343.5,3.184,0.5,3.184l-0.376,1.02a0.333,0.333,0,0,1-.519.036c-0.34-.25-1.717-1.037-1.323-4.007s3.7-4.043,5.438-4.043,5.4,1.02,5.169,5.188-3.2,4.9-4.382,4.9a2.584,2.584,0,0,1-1.9-.93l-0.375,1.807a5.84,5.84,0,0,1-1.127,2.29Z" transform="translate(-905 -16.031)"/>
+</svg>
