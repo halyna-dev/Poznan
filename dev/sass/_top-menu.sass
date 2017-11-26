@@ -1,0 +1,98 @@
+nav
+  margin: 0
+  padding: 0
+
+nav ul
+  display: flex
+  flex-direction: column
+  list-style-type: none
+  padding: 0
+  margin: 0
+  display: none
+
+nav ul.opening
+  display: block
+  height: 0
+  position: relative
+  z-index: 10
+
+nav li
+  border-bottom: 1px solid #045279
+  background: linear-gradient(0deg, $btn-color-2, $btn-color-1)
+
+nav li:last-child
+  border-bottom: none
+
+nav a
+  font-family: Arial, sans-serif
+  color: $font-color
+  display: block
+  padding: 5px 18px
+  text-transform: uppercase
+  text-decoration: none
+
+nav a:hover, nav a:focus
+  color: #FFF
+
+.menu-toggle
+  position: absolute
+  padding: 0.8em
+  top: 1em
+  right: .5em
+  cursor: pointer
+
+.hamburger, .hamburger::before, .hamburger::after
+  content: ''
+  display: block
+  background: $dark-blue
+  height: 3px
+  width: 2em
+  border-radius: 3px
+  -webkit-transition: all ease-in-out 350ms
+  transition: all ease-in-out 350ms
+
+.hamburger::before
+  -webkit-transform: translateY(-7px)
+  transform: translateY(-7px)
+
+.hamburger::after
+  -webkit-transform: translateY(4px)
+  transform: translateY(4px)
+
+.open .hamburger
+  -webkit-transform: rotate(45deg)
+  transform: rotate(45deg)
+
+.open .hamburger::before
+  display: none
+
+.open .hamburger::after
+  -webkit-transform: translateY(-1px) rotate(-90deg)
+  transform: translateY(-1px) rotate(-90deg)
+
+@media (min-width: 780px)
+  .menu-toggle
+    display: none
+  nav ul
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+  nav li
+    flex: 1 1 auto
+    border: none
+    background: #FFF
+  nav li a
+    font-family: Arial, sans-serif
+    font-stretch: normal
+    padding: 5px 10px
+    margin: 0 10px
+    border: none
+  nav a:hover
+    background: linear-gradient(0deg, $btn-color-2, $btn-color-1)
+  nav
+    display: flex
+    flex-direction: row
+    justify-content: center
+    text-align: center
+    position: static
+    z-index: 0

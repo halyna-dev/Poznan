@@ -1,2 +1,44 @@
 @import _fonts
 @import _variables
+@import "top-menu"
+@import "header__main"
+
+body
+  margin: 0
+  padding: 0
+  font-size: 14px
+  line-height: 1.5
+  font-family: $font-stack
+
+h1, h2, h3, h4, h5, h6
+  color: $dark-blue
+  text-transform: uppercase
+  margin-top: 0
+  margin-bottom: 5px
+
+.wrapp
+  overflow-x: hidden
+
+.mark
+  color: $blue
+
+.header__top-line
+  text-align: center
+  ul
+    margin-top: 0
+    margin-bottom: 10px
+    text-align: center
+    li
+      list-style: none
+      display: inline-block
+      padding: 0 5px
+      a
+        color: #333333
+        text-decoration: none
+        opacity: 0.4
+      a:hover
+        text-shadow: 0px 0px 5px $dark-blue
+
+@media (min-width: 780px)
+  .header__top-line ul
+    text-align: right

@@ -17,7 +17,7 @@ const gulp = require('gulp'),
     del = require('del');
 
 gulp.task('sass', function(){
-    return gulp.src('dev/sass/**/*.sass')
+    return gulp.src('dev/sass/*.sass')
         .pipe(sass())
         .pipe(autoprefixer(['last 5 versions'], { cascade: true }))
         .pipe(gulp.dest('dev/css'))
@@ -34,7 +34,7 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('watch', ['browser-sync', 'sass'], function() {
-    gulp.watch('dev/sass/**/*.sass', ['sass']);
+    gulp.watch('dev/sass/**/*.*', ['sass']);
     gulp.watch('dev/*.html', browserSync.reload);
     gulp.watch('dev/js/**/*.js', browserSync.reload);
 });
@@ -92,27 +92,3 @@ gulp.task('build', ['clean', 'img', 'sass', 'css', 'scripts'], function() {
 });
 
 // components_lib develop
-gulp.task('sass', function(){
-    return gulp.src('dev/components_lib/**/*.sass')
-        .pipe(sass())
-        .pipe(autoprefixer(['last 5 versions'], { cascade: true }))
-        .pipe(gulp.dest('dev/components_lib'))
-        .pipe(browserSync.reload({stream: true}))
-});
-
-gulp.task('browser-sync', function() {
-    browserSync({
-        server: {
-            baseDir: 'dev/components_lib'
-        },
-        notify: false
-    });
-});
-
-gulp.task('watch', ['browser-sync', 'sass'], function() {
-    gulp.watch('dev/components_lib/*.sass', ['sass']);
-    gulp.watch('dev/components_lib/*.html', browserSync.reload);
-    gulp.watch('dev/components_lib/*.js', browserSync.reload);
-});
-
-gulp.task('lib', ['sass', 'watch', 'browser-sync']);
