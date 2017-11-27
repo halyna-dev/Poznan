@@ -7,13 +7,11 @@
     <title>Poznan - city2live</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slick.css">
-    <!--<link rel="stylesheet" href="css/slick-theme.css">-->
     <link rel="stylesheet" href="bootstrap4_grid_only-master/bootstrap-grid.css">
 </head>
 <body>
 <div class="wrapp">
     <header class="header container">
-        <div></div>
         <div class="header__top-line row align-items-center justify-content-end">
             <h1 class="col-xs-12 col-sm-6 offset-md-3 col-md-6">Poz<span class="mark">nan</span> - city<span class="mark">2</span>life</h1>
             <ul class="col-xs-12 col-sm-6 col-md-3">
@@ -52,47 +50,214 @@
             </nav>
         </div>
         <div class="header__main">
-            <h2>Visit Poznan</h2>
-            <div><span>A city on the warta river in west-central Poland, the region called greater Poland.</span></div>
+            <div> </div>
+            <div class="header__main-text">
+                <h2>Visit Poz<span class="mark">nan</span></h2><br>
+                <span>A city on the <span class="mark">warta</span> river in west-central <span class="mark">Poland</span>, the region called <span class="mark">greater Poland.</span></span>
+            </div>
             <div class="carusel responsive" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
-                <div>
-                    <img src="img/person01.gif" alt="person">
+                <div class="carusel-slide">
+                    <img src="img/person1.gif" alt="person">
                     <div class="block-text">
-                        <div class="block-text__comment">I was in Poznan once. The architecture is really awesome.</div>
+                        <div class="block-text__comment">I was in Poznan once.
+                            The architecture is really awesome.</div>
                         <div class="block-text__author">Joe Wisdom, architect</div>
                     </div>
                 </div>
-                <div>
-                    <img src="img/person01.gif" alt="person">
+                <div class="carusel-slide">
+                    <img src="img/person2.gif" alt="person">
                     <div class="block-text">
-                        <div class="block-text__comment">I was in Poznan once. The architecture is really awesome.</div>
-                        <div class="block-text__author">Joe Wisdom, architect</div>
+                        <div class="block-text__comment">I was lost in Poznan<br>
+                            for 3 days.<br>
+                            I was terrified.</div>
+                        <div class="block-text__author">Little Box, child</div>
                     </div>
                 </div>
-                <div>
-                    <img src="img/person01.gif" alt="person">
+                <div class="carusel-slide">
+                    <img src="img/person3.gif" alt="person">
                     <div class="block-text">
-                        <div class="block-text__comment">I was in Poznan once. The architecture is really awesome.</div>
-                        <div class="block-text__author">Joe Wisdom, architect</div>
+                        <div class="block-text__comment">People used to<br>
+                            look at me now<br>
+                            they don’t see me.</div>
+                        <div class="block-text__author">Eva Doe, exmodel</div>
                     </div>
                 </div>
-                <div>
-                    <img src="img/person01.gif" alt="person">
+                <div class="carusel-slide">
+                    <img src="img/person4.gif" alt="person">
                     <div class="block-text">
-                        <div class="block-text__comment">I was in Poznan once. The architecture is really awesome.</div>
-                        <div class="block-text__author">Joe Wisdom, architect</div>
+                        <div class="block-text__comment">I have a lot of penfriends<br>
+                            in Poznań. I like<br>
+                            writting to them and ...</div>
+                        <div class="block-text__author">Emma Smith, child</div>
                     </div>
                 </div>
 
             </div>
         </div>
     </header>
-    <div class="content conteiner">
+    <main class="main container">
         <div class="row">
-    <div class="col-4"></div>
-    <div class="col-4"></div>
-    <div class="col-4"></div>
-</div>
+            <div class="main-right col-sm-12 col-md-9 order-md-10"> <!--main-right-->
+                <div class="top-article">
+                <h2>Why should you come to Poznan</h2>
+                <div class="article">
+                    <div class="date-post">
+                        11 Nov <br> 2013
+                    </div>
+                    <div class="user-avatar">
+                        <img src="img/user-male-icon.gif" alt="user avatar">
+                        <span>by<br>John Doe</span>
+                    </div>
+
+                    <div class="text-article">
+                        <div>
+                            <span>Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio  em nec elit. Sed posuere
+                            consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec  ullamcorper nulla non metus auctor fringilla.
+                            Nulla vitae elit libero, a pharetra augue. Donec  ullamcorper nulla non metus auctor fringilla... </span>
+                        </div>
+                        <div class="text-article__more">
+                            <button class="btn-more">read more</button>
+                            <div class="meta-label">
+                                <a href="" class="like"><i class="icon-thumb-up"></i>10 likes</a>
+                                <a href="#" class="comment"><i class="icon-speech-bubbles"></i>22 comments</a>
+                                <div class="triangle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--top-article-->
+                <div class="col-12">
+                    <div class="container">
+                    <div class="article-card row justify-content-between">
+                        <div class="card col-sm-12 col-lg-6 row">
+                            <div class="card__inner col-12">
+                                <div>
+                                    <h3>New attractions</h3>
+                                    <div class="card__autor"><span>Posted by <span class="mark">John Doe</span> on <span class="mark">10 Nov 2013</span></span></div>
+                                </div>
+                                <div class="card__text">
+                                        Donec sed odio dui. Duis mollis, est non commodo luctus,
+                                        nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                                        Sed posuere consectetur est at lobortis.
+                                    </div>
+                                <div class="card__more"><a href="#"><span class="mark">more...</span></a></div>
+                                <div class="card__soc">
+                                    <a href="" class="like"><i class="icon-thumb-up"></i>12</a>
+                                    <a href="#" class="comment"><i class="icon-speech-bubbles"></i>34</a>
+                                    <div class="card-shadow">
+                                        <div class="left"></div><div class="right"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+                        <div class="card col-sm-12 col-lg-6 row">
+                            <div class="card__inner col-12">
+                                <div>
+                                    <h3>LET’S MEET ON OLD MARKET SQUARE
+                            IT WILL BE FUN</h3>
+                                    <div class="card__autor"><span>Posted by <span class="mark">John Doe</span> on <span class="mark">09 Nov 2013</span></span></div>
+                                </div>
+                            <div class="card__text">
+                            Donec sed odio dui. Duis mollis, est non commodo luctus,
+                            nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                            Sed posuere consectetur est at lobortis. Eget lacinia odio sem nec elit.
+                            Sed posuere consectetur est at lobortis.eget lacinia...
+                        </div>
+                            <div class="card__more"><a href="#"><span class="mark">more...</span></a></div>
+                            <div class="card__soc">
+                            <a href="" class="like"><i class="icon-thumb-up"></i>56</a>
+                            <a href="#" class="comment"><i class="icon-speech-bubbles"></i>55</a>
+                                <div class="card-shadow">
+                                    <div class="left"></div><div class="right"></div>
+                                </div>
+                        </div>
+                            </div>
+                    </div>
+                    </div><!--article-card-->
+                </div>
+                </div>
+                <div class="col-12">
+                <div class="banner">
+                    <div class="card-shadow">
+                        <div class="left"></div><div class="right"></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="main-left col-sm-12 col-md-3 order-md-1">
+                <div class="main-left__wrapp">
+                <div class="about">
+                    <h3>About author</h3>
+                    <div>
+                        <span class="mark">John Doe</span> - lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta.
+                    </div>
+                </div>
+                <div class="posts">
+                    <h3>Related posts</h3>
+                    <div class="post">
+                        <img src="img/image-post-1.gif" alt="post">
+                        <div class="post-text">
+                            <div class="title"><a href="">Poznan it night</a></div>
+                            <div class="comment"><i class="icon-speech-bubbles"></i>10 Comments</div>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img src="img/image-post-2.gif" alt="post">
+                        <div class="post-text">
+                            <div class="title"><a href="">People to meet</a></div>
+                            <div class="comment"><i class="icon-speech-bubbles"></i>21 Comments</div>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img src="img/image-post-3.gif" alt="post">
+                        <div class="post-text">
+                            <div class="title"><a href="">Visit our office</a></div>
+                            <div class="comment"><i class="icon-speech-bubbles"></i>17 Comments</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="currency">
+                    <h3>Currency</h3>
+                    <table>
+                        <thead>
+                        <tr>
+                            <td>Date</td>
+                            <td>Value</td>
+                            <td>Status</td>
+                            <td>Diff</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>22.1</td>
+                            <td>459.5</td>
+                            <td><img src="img/arrow%20head.gif" alt="up"></td>
+                            <td>+1.0</td>
+                        </tr>
+                        <tr>
+                            <td>21.1</td>
+                            <td>448.5</td>
+                            <td><img src="img/arrow%20head%20kopia.gif" alt="down"></td>
+                            <td>-2.3</td>
+                        </tr>
+                        <tr>
+                            <td>20.1</td>
+                            <td>450.8</td>
+                            <td><img src="img/arrow%20head.gif" alt="up"></td>
+                            <td>+8.0</td>
+                        </tr>
+                        </tbody>
+                        <tr></tr>
+
+                    </table>
+                </div>
+                </div>
+            </div><!--maint-left-->
+        </div>
+    </main><!--main-->
+    <div class="map container">
+        <h2>WHERE CAN I FIND MORE INFORMATION</h2>
     </div>
 </div>
 <div class="footer">

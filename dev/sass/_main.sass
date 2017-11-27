@@ -1,0 +1,254 @@
+.main-right
+.top-article
+  border-top: 2px solid $light-blue
+  border-bottom: 1px dotted $font-color
+  border-right: 1px dotted $font-color
+  background-color: #FFFFFF
+  margin-top: -2px
+  box-sizing: border-box
+  h2
+    font-size: 32px
+    padding: 10px 20px 10px 20px
+    box-sizing: inherit
+  .article
+    display: flex
+    padding: 0 20px
+    box-sizing: inherit
+    .date-post
+      flex-shrink: 0
+      background-color: $blue
+      border-radius: 50px
+      padding-top: 10px
+      box-sizing: inherit
+      margin-right: 10px
+      width: 52px
+      height: 52px
+      display: inline-block
+      text-align: center
+      font-size: 0.7em
+      font-family: Arial, sans-serif
+      color: #FFF
+    .user-avatar
+      display: inline-block
+      width: 52px
+      height: 52px
+      margin-right: 10px
+      position: relative
+      span
+        color: #FFF
+        position: absolute
+        top: 7px
+        left: 6px
+        text-align: center
+        font-size: 0.7em
+        font-family: Arial, sans-serif
+    .text-article
+      display: inline-block
+      font-size: .9em
+      line-height: $line-height-articles
+      font-family: Arial, sans-serif
+      &:first-child
+        max-height: 9em
+        overflow-y: hidden
+
+  .text-article__more
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding-top: 25px
+    padding-bottom: 20px
+    box-sizing: inherit
+    position: relative
+  .btn-more
+    background: linear-gradient(0, $btn-color-2, $btn-color-1)
+    border: 1.5px solid #045279
+    border-bottom: 2px solid #000
+    box-shadow: 0 2px 2px #000
+    font-size: .8em
+    font-family: Arial, sans-serif
+    color: #FFFFFF
+    padding: 7px 16px
+    margin-bottom: 10px
+    width: 90px
+    max-height: 30.8px
+    box-sizing: inherit
+    cursor: pointer
+    &:focus
+      border: 2px solid #045279
+  .meta-label
+    background-color: $light-blue
+    text-align: right
+    padding: 5px 12px
+    box-sizing: inherit
+    position: relative
+    left: 0px //20px - border-line
+    .like, .comment
+      display: inline-block
+      text-decoration: none
+      color: $dark-blue
+      padding: 0 5px
+      font-size: .8em
+      i
+        padding: 0 8px
+        font-size: 1.4em
+      &:hover
+        color: #FFFFFF
+    .triangle
+      display: none
+
+/*  article cards style   */
+.article-card
+  padding-left: 15px
+  .card
+    padding-top: 25px
+    padding-right: 0
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    margin-bottom: 20px
+    .card__inner:first-of-type
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+    .card__inner
+      border-top-left-radius: 10px
+      background-color: $card-bg
+      box-shadow: 0 3px 3px #555
+      min-height: inherit
+      padding: 0
+    h3
+      padding: 25px 30px 0 30px
+      font-size: 1.7em
+    .card__autor
+      padding: 0 30px 20px 30px
+      color: $font-color-light
+
+    .card__text
+      padding: 0 30px
+      font-size: $font-size-articles
+      line-height: $line-height-articles
+    .card__more
+      padding: 0 30px 30px 30px
+      a
+        text-decoration: none
+    .card__soc
+      background-color: $card-bg-light
+      text-align: right
+      padding: 10px 0
+      .like .icon-thumb-up:before, .comment .icon-speech-bubbles:before
+        color: #90d4f5
+        padding: 0 5px
+        font-size: 1.1em
+      a
+        padding: 0 20px
+        text-decoration: none
+        color: #2778a5
+
+    .card-shadow
+      margin-bottom: -5px
+      height: 3px
+      text-align: center
+      padding: 0px
+      .left, .right
+        width: 49%
+        height: 7px
+        display: inline-block
+        border: 0px
+        box-shadow: 0
+      .left
+        background: linear-gradient(90deg, transparent, #FFFFFF, #FFFFFF)
+      .right
+        background: linear-gradient(270deg, transparent, #FFFFFF, #FFFFFF)
+
+
+
+.banner
+  height: 80px
+  margin: 0 15px
+  background-color: $card-bg
+  box-shadow: 0 3px 3px #555
+  position: relative
+  .card-shadow
+    width: 100%
+    position: absolute
+    top: 70px
+    height: 5px
+    text-align: center
+    padding: 0px
+    .left, .right
+      width: 49%
+      height: 5px
+      display: inline-block
+      border: 0px
+      box-shadow: 0
+    .left
+      background: linear-gradient(90deg, transparent, #FFFFFF, #FFFFFF)
+    .right
+      background: linear-gradient(270deg, transparent, #FFFFFF, #FFFFFF)
+
+
+//  ***  MAIN _ LEFT  ***
+
+//.maint-left
+.main-left__wrapp
+  .about
+    padding-top: 30px
+    padding-left: 30px
+    padding-right: 30px
+    border-bottom: 1px dotted $font-color
+    h3
+      font-size: 1.8em
+    div
+      padding-bottom: 20px
+      font-size: $font-size-articles
+      line-height: $line-height-articles
+      span
+        font-weight: bold
+  .posts
+    padding: 30px 30px 20px 30px
+    border-bottom: 1px dotted $font-color
+    h3
+      font-size: 1.8em
+    .post
+      padding: 10px 0
+      img
+        float: left
+        margin-right: 20px
+      .post-text
+        color: #5c5c5c
+        .title a
+          text-decoration: none
+          text-transform: uppercase
+          color: #5c5c5c
+          font-weight: bold
+        .comment
+          font-style: italic
+          padding: 3px 0
+          i:before
+            color: #5c5c5c
+            opacity: .6
+            font-size: 1.1em
+            font-style: normal
+            padding-right: 10px
+  .currency
+    padding: 30px
+    h3
+      font-size: 1.8em
+    table
+      border: 2px solid #FFFFFF
+      thead
+        background-color: #076e9f
+        color: #FFFFFF
+        tr td
+          padding: 5px 10px
+      tbody:nth-child(2n)
+        color: $blue
+        tr:nth-child(2n+1)
+          background-color: #c7e9fa
+        tr:nth-child(2n)
+          background-color: #b1e1f8
+        tr td
+          padding: 5px 10px
+          text-align: center
+
+

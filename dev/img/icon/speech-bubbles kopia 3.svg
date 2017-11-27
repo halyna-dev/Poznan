@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16.156" viewBox="0 0 16 16.156">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #90d4f5;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="speech-bubbles_kopia_3" data-name="speech-bubbles kopia 3" class="cls-1" d="M946,929h8a2,2,0,0,1,2,2v5a2,2,0,0,1-2,2h-8a2,2,0,0,1-2-2v-5A2,2,0,0,1,946,929Zm0.094,8.625v4.531L950,937.875ZM949,926.281h6.75a2,2,0,0,1,2,2v5.688a2,2,0,0,1-2,2H949a2,2,0,0,1-2-2v-5.688A2,2,0,0,1,949,926.281Zm1-.281h8a2,2,0,0,1,2,2v4.968a2,2,0,0,1-2,2h-8a2,2,0,0,1-2-2V928A2,2,0,0,1,950,926Zm8,7.656V939l-3.938-4.031Zm-0.031,5.313-3.531-3.751-1.563.032,3.948,4.344Z" transform="translate(-944 -926)"/>
+</svg>

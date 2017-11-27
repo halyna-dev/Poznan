@@ -2,16 +2,19 @@
 @import _variables
 @import "top-menu"
 @import "header__main"
+@import "_main"
+@import "_map"
 
 body
   margin: 0
   padding: 0
   font-size: 14px
   line-height: 1.5
-  font-family: $font-stack
+  font-family: Arial, sans-serif
 
 h1, h2, h3, h4, h5, h6
   color: $dark-blue
+  font-family: $font-stack
   text-transform: uppercase
   margin-top: 0
   margin-bottom: 5px
@@ -21,6 +24,10 @@ h1, h2, h3, h4, h5, h6
 
 .mark
   color: $blue
+
+.wrapp>.container
+  padding-left: 0
+  padding-right: 0
 
 .header__top-line
   text-align: center
@@ -40,5 +47,78 @@ h1, h2, h3, h4, h5, h6
         text-shadow: 0px 0px 5px $dark-blue
 
 @media (min-width: 780px)
-  .header__top-line ul
-    text-align: right
+  .header__top-line
+    padding-top: 10px
+    ul
+      text-align: right
+  .header__menu
+    margin-bottom: 10px
+  .slick-dots
+    display: none
+  .header__main .header__main-text
+    h2
+      font-size: 60px
+    &>span
+      font-size: 30px
+  .main>.row
+    border-bottom: 1px dotted $font-color
+  .main-right
+    .top-article
+      box-sizing: border-box
+      margin-top: -10px
+      margin-right: 35px
+    .article .user-avatar
+      margin-right: 20px
+      .text-article
+        >div
+          overflow: visible
+    .text-article__more
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      padding-top: 25px
+      padding-bottom: 20px
+      box-sizing: inherit
+      position: relative
+    .btn-more
+      padding: 7px 16px
+      margin-bottom: 0
+      min-width: 86px
+      max-height: 30.8px
+    .meta-label
+      padding: 5px 12px
+      position: relative
+      left: 25px //20px - border-line
+      .like, .comment
+        display: inline
+        padding: 0 5px
+        font-size: .8em
+      .triangle
+        border: 3px solid transparent
+        border-left: 3px solid $dark-blue
+        border-top: 3px solid $dark-blue
+        width: 3px
+        height: 3px
+        position: absolute
+        top: 32px
+        left: 197px
+        display: block
+    .article-card
+      padding-left: 0
+      margin-right: 23px
+    .banner
+      margin: 0
+      padding-left: 0
+      padding-bottom: 60px
+      margin-right: 23px
+
+  .main-left__wrapp
+    margin-left: 30px
+    margin-right: -30px
+    border-right: 1px dotted $font-color
+    .currency
+      padding-bottom: 30px
+
+@media (min-width: 992px)
+  .article-card .card .card-shadow
+    margin-bottom: -4px
