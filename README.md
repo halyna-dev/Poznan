@@ -1,9 +1,11 @@
-# Mountains
-Free PDS project. 
+# Poznan
+Test project. 
 In this project I used:
-- html/css
-- vanilla js
 - sass
+- Bootstrap 4 grid
+- jQuery
+- Plagin slick-1.8.0 and Basic-Hamburger-Navigation-Menu-jQuery-CSS
+- BEM-naming
 - gulp 
 <br>
-Landing page is responsive and optimized for download.
+Landing page is responsive and valid.
