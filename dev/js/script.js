@@ -1,6 +1,8 @@
 /**
  * Created by GVTar on 25.11.2017.
  */
+;
+// menu-mobile
 $('.menu-toggle').click(function() {
 
     $('ul').toggleClass('opening');
@@ -8,6 +10,7 @@ $('.menu-toggle').click(function() {
 
 });
 
+// settings slick slaider
 $(document).ready(function(){
     $('.responsive').slick({
         accessibility: true,
@@ -47,3 +50,18 @@ $(document).ready(function(){
         ]
     });
 });
+
+// banner random show
+(function () {
+    var banners = [
+            "<a href=\'#\'><img src=\"banners/league-gothic-1.png\" alt='click me\'></a>",
+            "<a href=\'#\'><img src=\"banners/league-gothic-2.png\" alt='click me\'></a>",
+            "<a href=\'#\'><img src=\"banners/league-gothic-3.png\" alt='click me\'></a>",
+            "<a href=\'#\'><img src=\"banners/league-gothic-4.png\" alt='click me\'></a>",
+            "<a href=\'#\'><img src=\"banners/league-gothic-5.png\" alt='click me\'></a>",
+            "<a href=\'#\'><img src=\"banners/league-gothic-6.png\" alt='click me\'></a>"
+        ],
+        rand = Math.trunc(Math.random() * (banners.length - 0) + 0);
+
+    $('.banner').append(banners[rand]);
+})();

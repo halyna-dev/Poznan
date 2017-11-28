@@ -168,6 +168,15 @@
   background-color: $card-bg
   box-shadow: 0 3px 3px #555
   position: relative
+  a
+    position: absolute
+    width: 100%
+    height: inherit
+  a img
+    width: 100%
+    height: inherit
+    background-position: center
+    background-size: cover
   .card-shadow
     width: 100%
     position: absolute
@@ -214,6 +223,7 @@
       img
         float: left
         margin-right: 20px
+        display: block
       .post-text
         color: #5c5c5c
         .title a
@@ -236,12 +246,10 @@
       font-size: 1.8em
     table
       border: 2px solid #FFFFFF
-      thead
-        background-color: #076e9f
-        color: #FFFFFF
-        tr td
-          padding: 5px 10px
-      tbody:nth-child(2n)
+      thead tr td
+          background-color: #076e9f !important
+          color: #FFFFFF
+      &:nth-child(2n)
         color: $blue
         tr:nth-child(2n+1)
           background-color: #c7e9fa
